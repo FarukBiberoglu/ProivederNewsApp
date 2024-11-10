@@ -6,7 +6,7 @@ import 'package:untitled14/model/news.dart';
 
 class NewsServices {
   Future<List<Articles>> fetchNews(String category) async {
-    String apiKey = 'dc0c3b0f59574965b45647202c5a5c98';
+    String apiKey = 'API KEY ';
    String url= 'https://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=$apiKey';
     Uri uri = Uri.parse(url);
     final response =  await http.get(uri);
